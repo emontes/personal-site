@@ -1,0 +1,18 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server":  "cd server && npm run develop",
+    "develop": "cd frontend && gatsby develop",
+    "start":   " npm run server & npm run develop",
+    "clean":   "cd frontend && gatsby clean",
+    "setup":   "cd frontend && gatsby clean && gatsby build",
+    "build":   "npm run server & npm run setup",
+    "serve":   "cd frontend && gatsby serve"
+  },
+  "keywords": [],
+  "author": "@el_ade",
+  "license": "ISC"
+}

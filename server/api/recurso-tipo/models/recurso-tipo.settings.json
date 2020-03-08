@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "recurso_tipos",
+  "info": {
+    "name": "Recurso Tipo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
