@@ -8,13 +8,13 @@ const HomeBanner = () => {
   if (size < 776) {
     return (
       <SmallBanner>
-        <Banner title="desarrollador independiente"></Banner>
+        <Banner title="desarrollador de sistemas"></Banner>
       </SmallBanner>
     )
   }
   return (
     <Background>
-      <Banner title="desarrollador independiente"></Banner>
+      <Banner title="desarrollador de sistemas"></Banner>
     </Background>
   )
 }

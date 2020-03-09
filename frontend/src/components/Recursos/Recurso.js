@@ -26,7 +26,7 @@ const Recurso = ({ title, url, used, image, recurso_tipo }) => {
         </div>
 
 
-        <img src={logo} alt="Enrique Montes" />
+        <img src={logo} alt="Enrique Adelino Montes Araujo" />
       </div>
       
     </article>

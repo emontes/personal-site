@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
   "connection": "default",
-  "collectionName": "recursos",
+  "collectionName": "desarrollos",
   "info": {
-    "name": "recurso"
+    "name": "Desarrollo"
   },
   "options": {
     "increments": true,
@@ -14,7 +14,7 @@
       "type": "string",
       "required": true
     },
-    "used": {
+    "created": {
       "type": "date",
       "required": true
     },
@@ -22,17 +22,15 @@
       "model": "file",
       "via": "related",
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "recurso_tipo": {
-      "model": "recurso-tipo"
-    },
-    "desarrollo": {
-      "via": "recursos",
-      "model": "desarrollo"
+    "recursos": {
+      "collection": "recurso",
+      "via": "desarrollo"
     }
   }
 }
