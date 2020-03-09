@@ -22,17 +22,13 @@
       "model": "file",
       "via": "related",
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "url": {
       "type": "string"
     },
     "recurso_tipo": {
       "model": "recurso-tipo"
-    },
-    "desarrollo": {
-      "via": "recursos",
-      "model": "desarrollo"
     }
   }
 }

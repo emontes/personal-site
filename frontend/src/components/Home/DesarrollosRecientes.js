@@ -1,13 +1,13 @@
 import React from 'react'
-import Desarrollo from './Desarrollo'
-import {graphql, useStaticQuery} from 'gatsby'
+import Desarrollo from '../Desarrollos/Desarrollo'
+import {graphql, useStaticQuery, Link} from 'gatsby'
 import styles from '../../css/courses.module.css'
 import Title from '../Title'
 
 const query = graphql`
 
 {
-    allStrapiDesarrollo(sort: {fields: created, order: DESC}) {
+    allStrapiDesarrollo(sort: {fields: created, order: DESC}, limit:9) {
       nodes {
         id
         title
@@ -43,7 +43,7 @@ const Desarrollos = () => {
     const {allStrapiDesarrollo:{nodes:desarrollos}} = useStaticQuery(query)
     return (
         <section className={styles.courses}>
-            <Title title="sistemas" subtitle="desarrollados" />
+            <Title title="últimos" subtitle="desarrollos" />
             <div className={styles.center}>
                 {
                     desarrollos.map(item => {
@@ -51,6 +51,9 @@ const Desarrollos = () => {
                     })
                 }
             </div>
+            <Link to='/desarrollos' className="btn-primary">
+                Más Desarrollos
+            </Link>
 
             
         </section>

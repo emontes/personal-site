@@ -5,7 +5,7 @@ import logo from "../../images/eama-logo.png"
 
 const Recurso = ({ title, url, used, image, recurso_tipo }) => {
   const mainImage = image.childImageSharp.fluid
-  const tipo = (recurso_tipo) ? recurso_tipo.title : ""
+  const tipo = recurso_tipo ? recurso_tipo.title : ""
   return (
     <article className={styles.course}>
       <div className={styles.imgContainer}>
@@ -22,13 +22,13 @@ const Recurso = ({ title, url, used, image, recurso_tipo }) => {
       <div className={styles.footer}>
         <div className={styles.text}>
           <h3>{title}</h3>
-  <p>{tipo}, {used}</p>
+          <p>
+            {tipo}, {used}
+          </p>
         </div>
-
 
         <img src={logo} alt="Enrique Adelino Montes Araujo" />
       </div>
-      
     </article>
   )
 }

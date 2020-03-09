@@ -17,7 +17,7 @@ const query = graphql`
         }
         image {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxHeight: 200) {
               #src
               ...GatsbyImageSharpFluid_withWebp
             }

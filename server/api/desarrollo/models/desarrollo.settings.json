@@ -18,7 +18,7 @@
       "type": "date",
       "required": true
     },
-    "image": {
+    "portada": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
@@ -29,8 +29,10 @@
       "required": true
     },
     "recursos": {
-      "collection": "recurso",
-      "via": "desarrollo"
+      "collection": "recurso"
+    },
+    "text": {
+      "type": "string"
     }
   }
 }
