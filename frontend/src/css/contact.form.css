@@ -1,0 +1,18 @@
+.forma {
+    display: grid;
+    align-items: center;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+.completo {
+    grid-column: span 2;
+}
+
+@media screen and (min-width: 776px) {
+    .forma {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}

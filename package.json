@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server":  "cd server && npm run develop",
-    "develop": "cd frontend && gatsby develop",
+    "develop": "cd frontend && gatsby develop -H 0.0.0.0",
     "start":   " npm run server & npm run develop",
     "clean":   "cd frontend && gatsby clean",
     "setup":   "cd frontend && gatsby clean && gatsby build",

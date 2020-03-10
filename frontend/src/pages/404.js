@@ -6,9 +6,9 @@ import Banner from "../components/Banner"
 const NotFoundPage = () => (
   <Layout>
     <header className={styles.error}>
-      <Banner title="oops! it's a dead end">
+      <Banner title="oops! un callejón sin salida">
         <Link to="/" className="btn-white">
-          back home
+          regresar al home
         </Link>
       </Banner>
     </header>
