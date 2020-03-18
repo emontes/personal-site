@@ -3,6 +3,7 @@ import Recurso from '../Recursos/Recurso'
 import {graphql, useStaticQuery, Link} from 'gatsby'
 import styles from '../../css/courses.module.css'
 import Title from '../Title'
+import { FormattedMessage } from "react-intl"
 
 const query = graphql`
 {
@@ -33,10 +34,19 @@ const query = graphql`
 
 const Recursos = () => {
     const {allStrapiRecurso:{nodes:recursos}} = useStaticQuery(query)
-    
+    const tranTitle = <FormattedMessage 
+      id="home.Recursos.titlte"
+      defaultMessage="Últimas Tecnologías"
+    />
+    const tranSubtitle = <FormattedMessage 
+      id="home.Recursos.subtitlte"
+      defaultMessage="que domino"
+    />
     return (
         <section className={styles.courses}>
-            <Title title="recursos" subtitle="tecnológicos" />
+            <Title title={tranTitle} subtitle={tranSubtitle} />
+
+
             <div className={styles.center}>
                 {
                     recursos.map(item => {
@@ -45,7 +55,11 @@ const Recursos = () => {
                 }
             </div>
             <Link to='/recursos' className="btn-primary">
-                Recursos que uso (o he Usado)
+              <FormattedMessage 
+                id="home.RecursosRecientes.ver-los-recursos"
+                defaultMessage="Ver Los Recursos que uso (o he Usado)"
+              />
+                
             </Link>
         </section>
     )

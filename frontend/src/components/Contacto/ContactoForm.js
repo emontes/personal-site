@@ -1,7 +1,6 @@
 import React from "react"
 import Button from "@material-ui/core/Button"
 import TextField from "@material-ui/core/TextField"
-import FormControl from "@material-ui/core/FormControl"
 import '../../css/contact.form.css'
 
 
@@ -106,7 +105,7 @@ class ContactoForm extends React.Component {
           variant="outlined"
           size="large"
           color="primary"
-          className = "completo mitad-centrado"
+          className = "completo"
         >
             {
                 state.fueEnviado

@@ -1,20 +1,31 @@
 import React from "react"
-import { AppContext } from "../../context/context"
-import SmallBanner from "./SmallBanner"
 import Banner from "../Banner"
 import Background from "./Background"
+import { defineMessages, FormattedMessage } from "react-intl"
+
 const HomeBanner = () => {
-  const { size } = React.useContext(AppContext)
-  if (size < 776) {
-    return (
-      <SmallBanner>
-        <Banner title="desarrollador de sistemas"></Banner>
-      </SmallBanner>
-    )
-  }
+  const translation = defineMessages({
+    title: {
+      id: "home.Banner.title",
+      defaultMessage: "Desarrollador Web en Cancún",
+      descripttion: "Título del Banner",
+    },
+    subtitle: {
+      id: "home.Banner.subtitle",
+      defaultMessage: "Especialista en Front end",
+      description: "SubTítulo descriptivo para el banner",
+    },
+  })
+
   return (
     <Background>
-      <Banner title="desarrollador de sistemas"></Banner>
+      <FormattedMessage {...translation.title}>
+        {txt => (
+          <Banner title={txt}>
+            <FormattedMessage {...translation.subtitle} />
+          </Banner>
+        )}
+      </FormattedMessage>
     </Background>
   )
 }

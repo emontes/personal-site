@@ -4,13 +4,16 @@
   padding-bottom: 4rem;
 }
 .text {
-  width: 90vw;
+  
+  
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 .text p {
+  
   font-size: 1.6rem;
   letter-spacing: 1px;
+  text-align: center;
 }
 .text a {
   letter-spacing: var(--mainSpacing);

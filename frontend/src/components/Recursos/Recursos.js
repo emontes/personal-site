@@ -3,6 +3,7 @@ import Recurso from './Recurso'
 import {graphql, useStaticQuery} from 'gatsby'
 import styles from '../../css/courses.module.css'
 import Title from '../Title'
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 const query = graphql`
 {
@@ -32,10 +33,19 @@ const query = graphql`
 `
 
 const Recursos = () => {
+    const tranTitle = 
+    <FormattedMessage 
+      id="recursos.recursos.title" 
+      defaultMessage="recursos Tecnológicos"
+    />
+    const tranSubtitle = <FormattedMessage 
+      id="recursos.recursos.subtitle"
+      defaultMessage="que domino"
+    />
     const {allStrapiRecurso:{nodes:recursos}} = useStaticQuery(query)
     return (
         <section className={styles.courses}>
-            <Title title="recursos que" subtitle="domino" />
+            <Title title={tranTitle} subtitle={tranSubtitle} />
             <div className={styles.center}>
                 {
                     recursos.map(item => {

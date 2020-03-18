@@ -3,6 +3,7 @@ import Desarrollo from '../Desarrollos/Desarrollo'
 import {graphql, useStaticQuery, Link} from 'gatsby'
 import styles from '../../css/courses.module.css'
 import Title from '../Title'
+import { FormattedMessage } from "react-intl"
 
 const query = graphql`
 
@@ -41,9 +42,17 @@ const query = graphql`
 
 const Desarrollos = () => {
     const {allStrapiDesarrollo:{nodes:desarrollos}} = useStaticQuery(query)
+    const tranTitle = <FormattedMessage 
+      id="home.Desarrollos.titlte"
+      defaultMessage="Últimos"
+    />
+    const tranSubtitle = <FormattedMessage 
+      id="home.Desarrollos.subtitlte"
+      defaultMessage="Desarrollos"
+    />
     return (
         <section className={styles.courses}>
-            <Title title="últimos" subtitle="desarrollos" />
+            <Title title={tranTitle} subtitle={tranSubtitle} />
             <div className={styles.center}>
                 {
                     desarrollos.map(item => {
@@ -52,6 +61,10 @@ const Desarrollos = () => {
                 }
             </div>
             <Link to='/desarrollos' className="btn-primary">
+                <FormattedMessage 
+                  id="home.DesarrollosRecientes.mas-desarrollos"
+                  defaultMessage="Ver más desarrollos"
+                />
                 Más Desarrollos
             </Link>
 

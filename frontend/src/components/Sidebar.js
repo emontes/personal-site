@@ -3,8 +3,9 @@ import { AppContext } from "../context/context"
 import styles from "../css/sidebar.module.css"
 import { FaTimes } from "react-icons/fa"
 import links from "../constants/Links"
-import { Link } from "gatsby"
+import { useIntl, Link } from "gatsby-plugin-intl"
 const Sidebar = () => {
+  const intl = useIntl()
   const { isSidebarOpen, handleCloseSidebar, height } = React.useContext(
     AppContext
   )
@@ -37,7 +38,8 @@ const Sidebar = () => {
                 className={styles.link}
                 onClick={handleCloseSidebar}
               >
-                {item.text}
+                {/* {item.text} */}
+                {intl.formatMessage({id: item.id })}
               </Link>
             )
           })}

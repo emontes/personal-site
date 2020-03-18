@@ -7,9 +7,11 @@
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "axios": "^0.19.2",
+    "babel-preset-react-app": "^9.1.1",
     "gatsby": "^2.19.32",
     "gatsby-background-image": "^0.8.14",
     "gatsby-image": "^2.2.23",
+    "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-manifest": "^2.2.20",
     "gatsby-plugin-offline": "^3.0.11",
     "gatsby-plugin-react-helmet": "^3.1.10",
@@ -24,6 +26,9 @@
     "react-icons": "^3.7.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "babel-plugin-react-intl": "^6.0.1",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -36,7 +41,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "extract-messages": "NODE_ENV=production babel ./src  --out-file /dev/null"
   },
   "repository": {
     "type": "git",

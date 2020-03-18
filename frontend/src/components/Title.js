@@ -4,7 +4,7 @@ const Title = ({ title, subtitle }) => {
   return (
     <div className={styles.banner}>
       <h4>
-        <span className={styles.title}>{title}</span>&nbsp;
+        <span className={styles.title}>{title}</span>
         <span>{subtitle}</span>
       </h4>
     </div>
