@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "medios",
+  "info": {
+    "name": "medio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "archivo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "alt": {
+      "type": "string"
+    },
+    "legend": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

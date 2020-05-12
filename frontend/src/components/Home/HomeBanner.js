@@ -7,14 +7,14 @@ const HomeBanner = () => {
   const translation = defineMessages({
     title: {
       id: "home.Banner.title",
-      defaultMessage: "Desarrollador Web en Cancún",
+      defaultMessage: "Desarrollador Front-End",
       descripttion: "Título del Banner",
     },
     subtitle: {
       id: "home.Banner.subtitle",
-      defaultMessage: "Especialista en Front end",
+      defaultMessage: "En Cancún desde 2002, Programando desde 1984",
       description: "SubTítulo descriptivo para el banner",
-    },
+    }
   })
 
   return (

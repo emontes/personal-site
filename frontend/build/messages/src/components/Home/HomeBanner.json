@@ -1,7 +1,7 @@
 [
   {
     "id": "home.Banner.title",
-    "defaultMessage": "Desarrollador Web en Cancún",
+    "defaultMessage": "Desarrollador Front-End",
     "file": "src/components/Home/HomeBanner.js",
     "start": {
       "line": 8,
@@ -15,7 +15,7 @@
   {
     "id": "home.Banner.subtitle",
     "description": "SubTítulo descriptivo para el banner",
-    "defaultMessage": "Especialista en Front end",
+    "defaultMessage": "En Cancún desde 2002, Programando desde 1984",
     "file": "src/components/Home/HomeBanner.js",
     "start": {
       "line": 13,

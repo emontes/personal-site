@@ -7,7 +7,7 @@ import Language from "./Language"
 
 const Layout = ({ children }) => {
   return (
-    // <IntlProvider locale={language} messages={data[language]}>
+    
     <main>
       <Navbar></Navbar>
       <Language />
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       {children}
       <Footer></Footer>
     </main>
-    // </IntlProvider>
+    
   )
 }
 

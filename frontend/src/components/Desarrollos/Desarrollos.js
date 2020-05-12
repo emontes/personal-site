@@ -3,6 +3,7 @@ import Desarrollo from './Desarrollo'
 import {graphql, useStaticQuery} from 'gatsby'
 import styles from '../../css/courses.module.css'
 import Title from '../Title'
+import { FormattedMessage, FormattedDate } from "gatsby-plugin-intl"
 
 const query = graphql`
 
@@ -13,7 +14,8 @@ const query = graphql`
         title
         text
         url
-        created(formatString: "MMM, YYYY")
+        #created(formatString: "MMM, YYYY")
+        created
         portada {
           childImageSharp {
             fluid(maxWidth: 600) {
@@ -41,9 +43,19 @@ const query = graphql`
 
 const Desarrollos = () => {
     const {allStrapiDesarrollo:{nodes:desarrollos}} = useStaticQuery(query)
+    const tranTitle = 
+    <FormattedMessage 
+      id="desarrollos.desarrollos.title" 
+      defaultMessage="sistemas"
+    />
+    const tranSubtitle = <FormattedMessage 
+      id="desarrollos.desarrollos.subtitle"
+      defaultMessage="desarrollados"
+    />
     return (
         <section className={styles.courses}>
-            <Title title="sistemas" subtitle="desarrollados" />
+        
+            <Title title={tranTitle} subtitle={tranSubtitle} />
             <div className={styles.center}>
                 {
                     desarrollos.map(item => {
