@@ -9,7 +9,7 @@ import Image from "gatsby-image"
 
 const IndexPage = ( {data} ) => (
   <Layout>
-    <Seo />
+    <Seo title="Desarrollador Front End"/>
     <HomeBanner></HomeBanner>
     <Recursos />
     <Desarrollos />

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Enrique Montes`,
-    description: `Desarrollador de Sistemas Web especialista en Front End.`,
+    description: `Desarrollo sistemas web utilizando Frameworks como Gastby y React para el Front,
+    y para el Back uso Headless CMS como Strapi, Contentful o Wordpress`,
     author: `@el_ade`,
     twitterUsername: "@_el_ade",
     image: "/desarrollador-web.jpg",
@@ -9,6 +10,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,8 +21,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

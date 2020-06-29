@@ -1,7 +1,7 @@
 import React from 'react'
 import Recurso from './Recurso'
 import {graphql, useStaticQuery} from 'gatsby'
-import styles from '../../css/courses.module.css'
+import styles from '../../css/recursos.module.css'
 import Title from '../Title'
 import { FormattedMessage } from "gatsby-plugin-intl"
 
@@ -44,7 +44,7 @@ const Recursos = () => {
     />
     const {allStrapiRecurso:{nodes:recursos}} = useStaticQuery(query)
     return (
-        <section className={styles.courses}>
+        <section className={styles.recursos}>
             <Title title={tranTitle} subtitle={tranSubtitle} />
             <div className={styles.center}>
                 {

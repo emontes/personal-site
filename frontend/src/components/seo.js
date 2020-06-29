@@ -30,7 +30,7 @@ const SEO = ({ title, description }) => {
 
   return (
     // <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
-    <Helmet htmlAttributes={{ lang: "en" }} title={title || siteTitle}>
+    <Helmet htmlAttributes={{ lang: "es" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={description || siteDesc} />
       <meta name="image" content={image} />
       {/* facebook cards */}

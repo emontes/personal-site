@@ -2,12 +2,13 @@ import React from 'react'
 import Recurso from '../Recursos/Recurso'
 import {graphql, useStaticQuery, Link} from 'gatsby'
 import styles from '../../css/courses.module.css'
+import styles2 from '../../css/recursos.module.css'
 import Title from '../Title'
 import { FormattedMessage } from "react-intl"
 
 const query = graphql`
 {
-    allStrapiRecurso(sort: {fields: used, order: DESC}, limit:6) {
+    allStrapiRecurso(sort: {fields: used, order: DESC}, limit:12) {
       nodes {
         id
         title
@@ -43,11 +44,11 @@ const Recursos = () => {
       defaultMessage="que domino"
     />
     return (
-        <section className={styles.courses}>
+        <section className={styles2.recursos}>
             <Title title={tranTitle} subtitle={tranSubtitle} />
 
 
-            <div className={styles.center}>
+            <div className={styles2.center}>
                 {
                     recursos.map(item => {
                         return <Recurso key={item.id} {...item} />

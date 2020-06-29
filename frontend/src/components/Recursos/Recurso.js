@@ -1,7 +1,6 @@
 import React from "react"
-import styles from "../../css/single-course.module.css"
+import styles from "../../css/single-recurso.module.css"
 import Image from "gatsby-image"
-import logo from "../../images/eama-logo.png"
 
 const Recurso = ({ title, url, used, image, recurso_tipo }) => {
   const mainImage = image.childImageSharp.fluid
@@ -27,7 +26,7 @@ const Recurso = ({ title, url, used, image, recurso_tipo }) => {
           </p>
         </div>
 
-        <img src={logo} alt="Enrique Adelino Montes Araujo" />
+        
       </div>
     </article>
   )

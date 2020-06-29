@@ -4,11 +4,11 @@
     "defaultMessage": "Últimas Tecnologías",
     "file": "src/components/Home/RecursosRecientes.js",
     "start": {
-      "line": 37,
+      "line": 38,
       "column": 22
     },
     "end": {
-      "line": 40,
+      "line": 41,
       "column": 6
     }
   },
@@ -17,11 +17,11 @@
     "defaultMessage": "que domino",
     "file": "src/components/Home/RecursosRecientes.js",
     "start": {
-      "line": 41,
+      "line": 42,
       "column": 25
     },
     "end": {
-      "line": 44,
+      "line": 45,
       "column": 6
     }
   },
@@ -30,11 +30,11 @@
     "defaultMessage": "Ver Los Recursos que uso (o he Usado)",
     "file": "src/components/Home/RecursosRecientes.js",
     "start": {
-      "line": 58,
+      "line": 59,
       "column": 14
     },
     "end": {
-      "line": 61,
+      "line": 62,
       "column": 16
     }
   }
