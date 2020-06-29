@@ -39,9 +39,9 @@ const SEO = ({ title, description }) => {
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={siteDesc} />
       <meta property="og:image" content={`${siteUrl}${image}`} />
-      <meta property="og:image:width" content="400" />
-      <meta property="og:image:height" content="300" />
-      {/* twitter card */}
+      <meta property="og:image:width" content="1366" />
+      <meta property="og:image:height" content="768" />
+      {/* twitter card -- Se recomienda 1200 x 628 aspect ratio 16:9 */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={siteTitle} />

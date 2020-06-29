@@ -54,7 +54,7 @@ export const query = graphql`
         description
         archivo {
           childImageSharp {
-            fluid {
+            fluid (quality: 90, maxWidth: 1366) {
               src
               ...GatsbyImageSharpFluid_withWebp
             }
