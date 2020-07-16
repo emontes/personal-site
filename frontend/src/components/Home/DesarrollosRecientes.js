@@ -65,7 +65,7 @@ const Desarrollos = () => {
                   id="home.DesarrollosRecientes.mas-desarrollos"
                   defaultMessage="Ver más desarrollos"
                 />
-                Más Desarrollos
+                
             </Link>
 
             
