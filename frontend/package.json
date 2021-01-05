@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-preset-react-app": "^9.1.1",
     "gatsby": "^2.19.32",
     "gatsby-background-image": "^0.8.14",
